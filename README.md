@@ -83,21 +83,42 @@ python badminton_analysis.py
 * You can replace with `yolov8n-pose.pt` or `yolov8m-pose.pt` for speed over accuracy.
 
 ---
+##  Output
 
-##  Output Example
+The output videos are fully annotated with pose-based visualizations using YOLOv8-Pose. Each player in the video is tracked and analyzed individually, and key biomechanical events are overlaid directly on the video.
 
-Each frame of the output video contains:
+Included Visual Elements:
+ Skeleton keypoints for all visible players
 
-* Player keypoints (pose skeleton)
-* Text annotations (e.g., `Lunge`, `Stroke in Progress`, `Illegal Serve`)
-* Real-time multi-player annotation support
+ Real-time annotations for:
+
+Stance & Footwork (e.g., Ready stance, Lunge)
+
+Stroke Mechanics (e.g., Elbow angle, Contact point posture)
+
+Serve Legality (e.g., Possible Illegal Serve)
+
+Reaction Timing (e.g., Movement latency post shot)
+
+Player-specific multi-person analysis with no need for manual labeling
+
+Each output video is saved to the output_videos/ folder, named as annotated_<input_video_name>.mp4.
 
 ---
 
-##  Feedback & Customization
+## Key Insights Enabled:
 
-Need additional analysis (e.g., CSV logs, 3D pose, racket tracking)?
-Feel free to reach out for extensions or advanced biomechanical breakdowns.
+
+Players' movement efficiency, readiness, and balance
+
+Stroke quality based on elbow/wrist/shoulder coordination
+
+Serve legality errors in doubles
+
+Reaction time from opponent actions
+
+Ability to detect both offensive and defensive posture changes
+
 
 ---
 
